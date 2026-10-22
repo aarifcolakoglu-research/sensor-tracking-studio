@@ -78,6 +78,11 @@ when packaged, and creates them on first run.
 
 ### Setup — calibration and sensor selection
 
+![Setup page (Figure S5 of the article).](docs/images/sts_setup.png)
+
+*Setup page (Figure S5 of the article).*
+
+
 The left panel runs the calibration; the right one says what is in each socket.
 
 **Calibration** reads every CSV in `input_raw_data/` and produces
@@ -131,6 +136,11 @@ repository ships the mapping used in the helmet study.
 
 ### Dashboard — live cards
 
+![Dashboard page, one card per socket (Figure S6 of the article).](docs/images/sts_dashboard.png)
+
+*Dashboard page, one card per socket (Figure S6 of the article).*
+
+
 One card per bound socket, showing the socket, the sensor in it, the raw value,
 the reading in two units, and a rolling chart. Connect to the Teensy, tare, and
 record; `SIMULATION` drives the cards from the calibration curves when no
@@ -160,6 +170,11 @@ narrow windows the toolbar can wrap while the cards stay on screen. Changing
 the equation degree or cycle rebuilds the readings without resizing the window.
 
 ### Overlay — all sensors on one chart
+
+![Overlay page, force of all twelve sensors on one chart (Figure S7 of the article).](docs/images/sts_overlay.png)
+
+*Overlay page, force of all twelve sensors on one chart (Figure S7 of the article).*
+
 
 One axes, one colour per socket, with the same Force and Indentation depth tabs
 above the chart — newtons and gram-force, or millimetres and microns, left axis
