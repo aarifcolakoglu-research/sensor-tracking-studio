@@ -1,0 +1,67 @@
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.pyc
+
+# -------------------------
+# IDE
+# -------------------------
+.idea/
+.vscode/
+
+# ---------------------------------------------------------------------------
+# Data
+#
+# What decides this is not whether something is "data" but what it costs to
+# lose it, and whether another machine needs it:
+#
+#   tracked   small, and either irreplaceable or needed elsewhere. Neither
+#             equations file can be produced without the 2.2 GB of raw
+#             measurements.
+#   ignored   large and reproducible in minutes, or true of this machine only.
+# ---------------------------------------------------------------------------
+
+# The raw calibration measurements: 37 files of about 60 MB, 2.2 GB together.
+# The source of everything below and the one thing here that cannot be made
+# again - but far too large to keep in git.
+input_raw_data/*
+!input_raw_data/.gitkeep
+
+# Stage 1 output, about 1 GB per run. Over GitHub's 100 MB limit for a single
+# file, and rebuilt from the raw data in roughly two minutes.
+datasets/metadata_fz.csv
+
+# Timestamped copies of each stage, including the 1 GB one.
+datasets/archive/*
+!datasets/archive/.gitkeep
+
+# Tracked deliberately, despite living here:
+#   datasets/sensor_fit_equations.csv   0.6 MB - the file the live engine
+#                                       reads, and the only record of the
+#                                       coefficients
+#   datasets/metadata_fz_median.csv     1.5 MB - the per-step statistics, so
+#                                       any machine can re-fit the equations,
+#                                       and the publication's source data
+#   config/selected_sensors.json        the socket mapping; shipped with the
+#                                       configuration used in the helmet study
+#   reports/*.csv                       the measured evidence behind the fit
+#                                       decisions
+
+# Recorded sessions stay on the measuring machine.
+outputs/*
+!outputs/.gitkeep
+
+# True of this computer alone: theme and interface scale.
+config/ui_settings.json
+
+# Regenerated from metadata_fz_median.csv in seconds, one file per sensor.
+visualizations/*
+!visualizations/.gitkeep
+
+# -------------------------
+# Packaging output
+# -------------------------
+build/
+dist/
+*.spec.bak

@@ -1,0 +1,28 @@
+# Runtime dependencies, pinned to the versions this project is developed and
+# run against.
+#
+#   pip install -r requirements.txt
+#
+# Building the Windows application needs a couple more; those live in
+# packaging/requirements-build.txt so this file matches the project's own
+# environment exactly and nothing reports a missing package.
+
+# --- GUI & Visualization ---
+PyQt6==6.7.1
+PyQt6-Qt6==6.7.2
+PyQt6-sip==13.8.0
+matplotlib==3.10.0
+
+# --- Data Science & Math ---
+numpy==2.2.2
+pandas==2.2.3
+scipy==1.15.1
+scikit-learn==1.6.1
+joblib==1.4.2
+
+# --- Hardware Communication ---
+pyserial==3.5
+
+# --- Utilities ---
+python-dateutil==2.9.0.post0
+six==1.17.0

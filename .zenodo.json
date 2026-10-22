@@ -1,0 +1,22 @@
+{
+  "title": "Sensor Tracking Studio",
+  "upload_type": "software",
+  "description": "Calibration and live monitoring software for a 12-channel soft magnetic (Hall-effect) tactile force sensor array.",
+  "creators": [
+    {
+      "name": "Colakoglu, Ahmet Arif",
+      "affiliation": "University of Leeds",
+      "orcid": "0000-0002-4409-1376"
+    }
+  ],
+  "license": "gpl-3.0-only",
+  "keywords": [
+    "tactile sensor",
+    "calibration",
+    "real-time monitoring",
+    "Hall effect",
+    "craniosynostosis",
+    "cranial orthosis"
+  ],
+  "access_right": "open"
+}

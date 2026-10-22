@@ -1,0 +1,12 @@
+# Extra packages needed only to build the Windows application. Nothing here is
+# imported by the program itself.
+#
+# Install them into the same environment the application runs in, so the build
+# bundles the library versions the project is actually developed against:
+#
+#   pip install -r requirements.txt
+#   pip install -r packaging/requirements-build.txt
+#   packaging\build.bat
+
+pyinstaller>=6.10
+pillow>=10.0        # draws packaging/app_icon.ico

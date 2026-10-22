@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the article and the software."
+title: "Sensor Tracking Studio"
+type: software
+authors:
+  - family-names: Colakoglu
+    given-names: Ahmet Arif
+    affiliation: University of Leeds
+    orcid: "https://orcid.org/0000-0002-4409-1376"
+repository-code: "https://github.com/aarifcolakoglu-research/sensor-tracking-studio"
+license:
+  - GPL-3.0-only
+  - CC-BY-NC-4.0
+version: "1.0.0"
+date-released: "2026-10-05"
+abstract: "Calibration and live monitoring software for a 12-channel soft magnetic (Hall-effect) tactile force sensor array."
+keywords:
+  - tactile sensor
+  - calibration
+  - real-time monitoring
+  - Hall effect
+  - craniosynostosis
+  - cranial orthosis
+preferred-citation:
+  type: article
+  title: "Evaluation of an Instrumented Helmet for Measurement of Orthosis–Head Interface Forces in Pediatric Craniosynostosis"
+  authors:
+    - family-names: Colakoglu
+      given-names: Ahmet Arif
+  # journal, year, doi: to be added on publication
